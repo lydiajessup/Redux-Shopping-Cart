@@ -37,3 +37,13 @@ Note: You're encouraged to show your work by including multiple commits - we'll 
 You're welcome (but not required) to add any libraries you think would be helpful.
 
 Please also update this README file: we'd love to see notes on your decision-making process, links to the most exciting pieces of code, or anything else that will give us additional context when reviewing your assessment.
+
+## Documentation
+
+Step 1: Accomplish stacking function
+
+First, to better understand the structure of the code, I started by put putting borders around each element to make sure I understood how all the elements were nested and worked together.
+
+My first goal was to get the stacking to work correctly for the mobile view.
+
+After putting boxes around all of the elements, I made sure every sub element was in a div so that I could easily manipulate them. I made a div structure so that each product had two main divs: the picture and the rest of the information. Within the info div, I could put and arrange all of the info how I wanted later. My focus at this point was to get the picture and info to stack correctly. I did this by using flex containers within the product item so that I could easily change from a column setup to a horizontal setup.
