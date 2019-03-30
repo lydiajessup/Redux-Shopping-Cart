@@ -1,5 +1,8 @@
 import shop from '../api/shop'
 import * as types from '../constants/ActionTypes'
+//import ActionTypes from '../constants/ActionTypes';
+
+
 
 const receiveProducts = products => ({
   type: types.RECEIVE_PRODUCTS,
@@ -36,3 +39,24 @@ export const checkout = products => (dispatch, getState) => {
     })
   })
 }
+
+
+
+////adding moadal
+
+export const showModal = ({ modalProps, modalType }) => dispatch => {
+  dispatch({
+    type: types.SHOW_MODAL,
+    modalProps,
+    modalType
+  });
+}
+
+export const hideModal = () => dispatch => {
+  dispatch({
+    type: types.HIDE_MODAL
+  });
+}
+
+
+/////
