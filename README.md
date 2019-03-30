@@ -53,4 +53,5 @@ Step 2: Modal Function
 Next I worked on making basic modal pop up following an example online (this is my first time using redux, so I had to look a lot up). I did this separately with an empty popup in order to make sure I got the functionality down correctly before adding content. Next I needed to add the cart to this modal. I first tried adding the cart component to the modal but had trouble integrating it. I tried the other way around and still kept getting errors. Then I tried adding the CartContainer to the ModalRoot container, but got an error this way as well. I decided to switch gears and focus on the css and return to the cart content after.
 
 Step 3: CSS
+
 For the CSS I began by importing the fonts from the sketch file. Then I added color and styled the buttons and I used @media to make the website responsive for different sized screens. I had a bit of trouble adding the photos and ran out of time to adjust the rest of the CSS to make it respond correctly, so some of it doesn’t align the way it should, but most of the structure is there and just needs to be adjusted a bit more to work smoothly.
