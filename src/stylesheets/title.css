@@ -1,0 +1,30 @@
+/* for mobile*/
+@media only screen and (max-width: 320px) {
+  .title {
+    font-family: Helvetica;
+    font-size: 21px;
+    color: #292929;
+    letter-spacing: -0.22px;
+  }
+}
+
+
+/* for tablet*/
+@media only screen and (max-width: 768px) {
+  .title {
+    font-family: Helvetica;
+    font-size: 28px;
+    color: #292929;
+    letter-spacing: -0.3px;
+  }
+}
+
+/* for tablet*/
+@media only screen and (min-width: 768px) {
+  .title {
+    font-family: Helvetica;
+    font-size: 38px;
+    color: #292929;
+    letter-spacing: -0.41px;
+  }
+}

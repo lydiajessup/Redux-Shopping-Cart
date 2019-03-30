@@ -1,0 +1,34 @@
+
+/* for mobile*/
+@media only screen and (max-width: 320px) {
+  .price {
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #292929;
+    letter-spacing: -0.2px;
+    text-align: right;
+  }
+}
+
+
+/* for tablet*/
+@media only screen and (max-width: 768px) {
+  .price {
+    font-family: Helvetica;
+    font-size: 21px;
+    color: #292929;
+    letter-spacing: -0.27px;
+    text-align: right;
+  }
+}
+
+/* for tablet*/
+@media only screen and (min-width: 768px) {
+  .price {
+    font-family: Helvetica;
+    font-size: 21px;
+    color: #292929;
+    letter-spacing: -0.27px;
+    text-align: right;
+  }
+}

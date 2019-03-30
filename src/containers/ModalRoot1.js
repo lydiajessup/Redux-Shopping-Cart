@@ -2,9 +2,12 @@ import React from 'react'
 import { connect } from 'react-redux'
 import ReactModal from 'react-modal';
 
+
 const mapStateToProps = state => ({
-  ...state.modal
+  ...state.modal,
+
 })
+
 
 class ModalContainer extends React.Component {
   constructor(props) {
@@ -41,9 +44,11 @@ class ModalContainer extends React.Component {
           ariaHideApp={false}
         >
 
-          <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
+          <h2 ref={subtitle => this.subtitle = subtitle}>Your Cart</h2>
           <button onClick={this.closeModal}>close</button>
-          <div>I am a modal</div>
+          <div>Cart</div>
+
+
 
         </ReactModal>
       </div>

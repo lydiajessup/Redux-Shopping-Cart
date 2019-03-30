@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const AlertModal = ({ closeModal, title, message }) => {
   return (
     <div className="modal-content">
@@ -13,6 +14,7 @@ const AlertModal = ({ closeModal, title, message }) => {
       </div>
       <div className="modal-body">
         <p>{message}</p>
+
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary" onClick={closeModal}>close</button>
@@ -20,5 +22,10 @@ const AlertModal = ({ closeModal, title, message }) => {
     </div>
   )
 }
+
+
+//cart
+
+
 
 export default AlertModal

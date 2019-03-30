@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import "../stylesheets/product.css"
+import "../stylesheets/price.css"
+import "../stylesheets/inventory.css"
+import "../stylesheets/title.css"
 
 const Product = ({ price, inventory, title }) => (
   <div className="product">
@@ -14,9 +17,9 @@ const Product = ({ price, inventory, title }) => (
     </div>
 
     <div className="inventory">
-      {inventory ? ` x ${inventory}` : null}
+      {inventory ? `${inventory} REMAINING ` : null}
     </div>
-    
+
   </div>
 )
 

@@ -6,6 +6,10 @@ import { showModal, hideModal } from '../actions/index.js'
 
 import ProductsContainer from './ProductsContainer'
 import CartContainer from './CartContainer'
+import "../stylesheets/app-title.css"
+import "../stylesheets/cart-button.css"
+import "../stylesheets/button-div.css"
+
 
 const MESSAGE = "A redux modal component.";
 
@@ -23,14 +27,14 @@ class App extends Component{
   constructor(props) {
      super(props)
      this.closeModal = this.closeModal.bind(this);
-     this.openAlertModal = this.openAlertModal.bind(this);
+     this.openModal = this.openModal.bind(this);
    }
 
    closeModal(event) {
       this.props.hideModal();
     }
 
-  openAlertModal(event) {
+  openModal(event) {
     this.props.showModal({
      open: true,
      title: 'Alert Modal',
@@ -45,20 +49,19 @@ class App extends Component{
       <div className="app">
         <header className="app-header">
            <h1 className="app-title">Acme Store</h1>
-        </header>
-        <div className="container">
-          <div className="col">
-             <button
-               className="btn btn-outline-primary btn-block"
-               onClick={this.openAlertModal}
+           <div className="button-div">
+             <button className="cart-button"
+               onClick={this.openModal}
              >Shopping Cart</button>
-          </div>
+           </div>
+        </header>
+          <hr/>
           <div>
             <ProductsContainer />
             <ModalRoot />
           </div>
-        </div>
       </div>
+
     );
   }
 }

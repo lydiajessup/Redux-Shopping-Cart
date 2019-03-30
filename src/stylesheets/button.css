@@ -1,0 +1,49 @@
+
+  /* for mobile*/
+  @media only screen and (max-width: 320px) {
+    .price {
+      font-family: Helvetica;
+      font-size: 13px;
+      color: #FFFFFF;
+      letter-spacing: -0.14px;
+      background: #5E97D1;
+      border-radius: 100px;
+    }
+  }
+
+
+  /* for tablet*/
+  @media only screen and (max-width: 768px) {
+    .button {
+      background: #5E97D1;
+      border-radius: 100px;
+      font-family: Helvetica;
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: -0.15px;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+    }
+  }
+
+  /* for tablet*/
+  @media only screen and (min-width: 768px) {
+
+    .button{
+      background: #5E97D1;
+      border-radius: 100px;
+      font-family: Helvetica;
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: -0.15px;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      position: relative;
+      top: 150px;
+
+
+    }
+  }

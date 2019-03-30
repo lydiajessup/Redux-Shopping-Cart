@@ -1,17 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
-import "../stylesheets/product-item.css"
 import "../stylesheets/add-button.css"
 import "../stylesheets/all-info.css"
 import "../stylesheets/flex-container.css"
 import "../stylesheets/photo.css"
+import "../stylesheets/button.css"
+import logo from '../api/pic.svg';
+
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div className="flex-container" style={{ marginBottom: 20 }}>
 
     <div className="photo" >
-      <p>photohere</p>
+      <p>
+      <img src={logo} alt="Logo" />
+      </p>
     </div>
 
     <div className="all-info" >
@@ -21,10 +25,10 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
         inventory={product.inventory} />
 
       <div className="add-button">
-        <button
+        <button className="button"
           onClick={onAddToCartClicked}
           disabled={product.inventory > 0 ? '' : 'disabled'}>
-          {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
+          {product.inventory > 0 ? 'ADD TO CART' : 'Sold Out'}
         </button>
       </div>
 

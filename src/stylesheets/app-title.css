@@ -1,0 +1,33 @@
+/* for mobile*/
+@media only screen and (max-width: 320px) {
+  .app-title{
+    font-family: Helvetica;
+    font-size: 28px;
+    color: #292929;
+    letter-spacing: -0.59px;
+    line-height: 44px;
+  }
+}
+
+
+/* for tablet*/
+@media only screen and (max-width: 768px) {
+  .app-title {
+    font-family: Helvetica;
+    font-size: 38px;
+    color: #292929;
+    letter-spacing: -0.8px;
+    line-height: 44px;
+  }
+}
+
+/* for tablet*/
+@media only screen and (min-width: 768px) {
+  .app-title {
+    font-family: Helvetica;
+    font-size: 51px;
+    color: #292929;
+    letter-spacing: -1.07px;
+    line-height: 44px;
+  }
+}
