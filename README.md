@@ -47,3 +47,7 @@ First, to better understand the structure of the code, I started by put putting 
 My first goal was to get the stacking to work correctly for the mobile view.
 
 After putting boxes around all of the elements, I made sure every sub element was in a div so that I could easily manipulate them. I made a div structure so that each product had two main divs: the picture and the rest of the information. Within the info div, I could put and arrange all of the info how I wanted later. My focus at this point was to get the picture and info to stack correctly. I did this by using flex containers within the product item so that I could easily change from a column setup to a horizontal setup.
+
+Step 2: Modal Function
+
+Next I worked on making basic modal pop up following an example online (this is my first time using redux, so I had to look a lot up). I did this separately with an empty popup in order to make sure I got the functionality down correctly before adding content. Next I needed to add the cart to this modal. I first tried adding the cart component to the modal but had trouble integrating it. I tried the other way around and still kept getting errors. Then I tried adding the CartContainer to the ModalRoot container, but got an error this way as well. I decided to switch gears and focus on the css and return to the cart content after.
